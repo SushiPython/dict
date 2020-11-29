@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dict</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body class="w3-center">
+  <div class="w3-container main-shadow">
+  <h1>Dict, the world's simplest dictionary.</h1>
+  </div>
+  <form class="w3-container" method="GET" action="/proxy">
+  <p>Enter a Word</p>
+  <input class="w3-input w3-center" type="text" name="word" placeholder="{{rW}}" required><br>
+   <button class="w3-button w3-white w3-border">Search</button>
+  </form>
+<script>
+  function toggle() {
+  var a = document.getElementById("dark");
+  if (a.disabled = "disabled") {
+    a.disabled = undefined;
+  } 
+  if (a.disabled = undefined) {
+    a.disabled = "disabled";
+  }
+}
+</script>
+<style>
+  input[type="text"] {  
+    text-align: center; 
+    display: block;
+    margin: 0 auto;
+    width:30%
+  }
+  .main-shadow {
+    box-shadow: 10px 0px 5px grey;
+  }
+</style>
+</body>
+</html>

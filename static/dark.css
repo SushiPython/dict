@@ -1,0 +1,21 @@
+body {
+  background-color: #111;
+}
+
+p,h1,h2,h3,h4,h5,h6,label,footer,a {
+  color: #eee;
+}
+
+.main-shadow {
+    box-shadow: 10px 0px 5px #000;
+}
+
+button {
+  background-color: #000;
+  color: black;
+  border: 2px solid #eee; /* Green */
+}
+
+button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}

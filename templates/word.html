@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dict - {{word}}</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body class="w3-center">
+  <div class="w3-container main-shadow">
+	  <h1>Dict, the world's simplest dictionary.</h1><h2><b>{{word}}</b> / {{pos}}</h2>
+  </div>
+    <audio id="audio" src="{{audio}}" autoplay="false" ></audio>
+    <br>
+    <button class="w3-button w3-white w3-border" onclick="playSound();">Audio Pronunciation</button>
+    <script>
+    function playSound() {
+      var sound = document.getElementById("audio");
+      sound.play();
+    }
+    </script>
+  <h3><b>Etymology:</b> {{etymology}}</h3>
+  <h3><b>Pronunciation:</b> {{pronunc}}</h3>
+	<p><b>Dictionary.com:</b> {{dictionaryDefine}}</p>
+  <p><b>Wikitionary:</b> {{wikidef}}</p>
+  <p><b>Vocabulary.com:</b> {{vocabDefine}}</p>
+  <p><b>MerriamWebster (Beta):</b> {{merriam}}</p>
+<style>
+  .main-shadow {
+    box-shadow: 10px 0px 5px grey;
+  }
+</style>
+</body>
+
+</html>
